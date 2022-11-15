@@ -30,7 +30,7 @@ form.addEventListener('submit', e => {
       })
       .catch(({ position, delay }) => {
         Notiflix.Notify.failure(
-          `✅ Fulfilled promise ${position} in ${delay}ms`
+          `❌ Rejected promise ${position} in ${delay}ms`
         );
       });
     delay += step;
